@@ -1,0 +1,65 @@
+.unprecedented {
+  @include padding(50px null null);
+  overflow: hidden;
+  
+  &__title {
+    @include text-shadow;
+    @include padding(null null 50px);
+    color: lighten($c-brand, 10%);
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__content {
+    @include container();
+  }
+  
+  &__info {
+    @include span(6 of 12);
+    height: 600px;
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+      @include margin(null null 50px);
+      height: auto;
+    }
+  }
+  
+  &__text {
+    font-size: 1.414rem;
+    font-weight: 300;
+    line-height: 110%;
+    transform: translateY(1500px);
+    transition: transform 1s ease-out;
+    @include breakpoint(0 $sm) {
+      transform: none;
+    }
+    
+    &_view {
+      transform: translateY(0);
+    }
+  }
+  
+  &__img {
+    @include span(6 of 12 last);
+    height: 600px;
+    text-align: center;
+    transform: translateX(1500px);
+    transition: transform 1s ease-out;
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+    }
+    @include breakpoint(0 $sm) {
+      height: 500px;
+      transform: none;
+    }
+    
+    &_view {
+      transform: translateX(0);
+    }
+    
+    > img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.modal-price.modal#modal-price
+  +e.name
+  +e.H4.title.center-align Чтобы узнать стоимость размещения рекламы на этом элементе, заполните поля:
+  .input-field
+    input(type="text")#modal-price-name
+    label(for="modal-price-name") Ваше имя
+  .input-field
+    input(type="email")#modal-price-email
+    label(for="modal-price-email") Ваш адрес электронной почты
+  +e.submit-wrapper
+    button(type="submit").btn.waves-effect.waves-light
+      | Узнать
+  input(type="hidden" value="")

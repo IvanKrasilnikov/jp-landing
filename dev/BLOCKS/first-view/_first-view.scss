@@ -1,0 +1,118 @@
+.first-view {
+  @include padding(20px null 50px);
+  @include position(relative);
+  text-align: center;
+  
+  &__bg {
+    @include position(absolute, 0 null null 0);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    
+    &:before {
+      @include position(absolute, 0 null null 0);
+      background-color: rgba(black, 0.6);
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  &__header {
+    @include clearfix;
+    @include position(relative);
+  }
+  
+  &__logo {
+    @include position(relative);
+    float: left;
+    z-index: 2;
+  }
+  
+  &__menu {
+    background-color: $c-brand;
+    float: right;
+    
+    &:hover {
+      background-color: lighten($c-brand, 10%);
+    }
+  }
+  
+  &__phone-wrapper {
+    @include position(absolute, 0 null null 0);
+    width: 100%;
+  }
+  
+  &__phone {
+    @include text-shadow;
+    color: white;
+    font-size: 2.827rem;
+    font-weight: 300;
+    line-height: 60px;
+    @include breakpoint(0 $xs) {
+      font-size: 1.414rem;
+    }
+    @include breakpoint($xs $sm) {
+      font-size: 1.999rem;
+    }
+  }
+  
+  &__title,
+  &__text {
+    @include margin(null null 50px);
+    @include text-shadow;
+    color: $c-base-white;
+    font-weight: 300;
+  }
+  
+  &__title {
+    @include padding(50px null null);
+    @include breakpoint(0 $md) {
+      font-size: 2.827rem;
+    }
+  }
+  
+  &__text {
+    @include breakpoint(0 $md) {
+      font-size: 1.414rem;
+    }
+  }
+  
+  &__button {
+    @include margin(null 30px null null);
+    background-color: white;
+    color: $c-brand;
+    width: 320px;
+    @include breakpoint(0 $md) {
+      @include margin(null 0 null null);
+    }
+    @include breakpoint(0 $lg) {
+      @include margin(null null 10px null);
+      width: 380px;
+    }
+    @include breakpoint($md $lg) {
+      @include margin(null 80px);
+    }
+    
+    &:last-child {
+      @include breakpoint($lg) {
+        @include margin(null 0 null null);
+      }
+    }
+    
+    &_accent {
+      background-color: $c-brand;
+      color: white;
+      
+      &:hover {
+        background-color: lighten($c-brand, 10%);
+      }
+    }
+  }
+  
+  &__next {
+    @include margin(30px null null);
+  }
+}

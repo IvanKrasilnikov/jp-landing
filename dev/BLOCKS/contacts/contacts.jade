@@ -1,0 +1,16 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.contacts#contacts: .wrapper
+  +e.H2.title Готовы обсудить детали проекта?
+  +e.buttons
+    +e(href="#modal-offer").button.btn-large.modal-trigger.waves-effect.waves-light Персональное предложение
+    +e(href="#").button.btn-large.waves-effect.waves-light Скачать презентацию
+    +e(href="#modal-call").button.waves-effect.waves-light.btn-large.modal-trigger Заказать звонок
+  +e.content
+    +e.info.valign-wrapper
+      .valign
+        +e.name Андрейченко Юлия
+        +e.phone: a(href="tel:+74957956166") +7 495 795-61-66
+        +e.phone: a(href="tel:+79031098914") +7 903 109-89-14
+        +e.mail: a(href="mailto:julia@jet-partners.ru") julia@jet-partners.ru
+    +e.img: img(src="img/contacts.jpg" alt="")

@@ -1,0 +1,82 @@
+.price {
+  @include padding(80px null 100px);
+  background-color: lighten($c-brand, 10%);
+  overflow-x: hidden;
+  overflow-y: visible;
+  
+  .carousel {
+    @include position(relative, -50px null null null);
+    height: 500px;
+    overflow: visible;
+  }
+  
+  &__card.carousel-item {
+    height: auto;
+    width: 300px;
+  }
+  
+  &__title {
+    @include text-shadow;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__card-title {
+    @include text-shadow;
+    color: $c-brand;
+    font-weight: 300;
+  }
+  
+  &__text {
+    font-weight: 300;
+    height: 90px;
+  }
+  
+  &__sale-button {
+    @include margin(null null 20px);
+    background-color: lighten($c-brand, 10%);
+    color: white;
+    
+    &:hover {
+      background-color: lighten($c-brand, 15%);
+    }
+  }
+  
+  &__buttons {
+    @include margin(150px null null);
+    text-align: center;
+  }
+  
+  &__button {
+    @include margin(null 30px null null);
+    background-color: lighten($c-brand, 15%);
+    color: white;
+    width: 320px;
+    @include breakpoint(0 $md) {
+      @include margin(null 0 null null);
+    }
+    @include breakpoint(0 $lg) {
+      @include margin(null null 10px null);
+      width: 380px;
+    }
+    @include breakpoint($md $lg) {
+      @include margin(null 80px);
+    }
+    
+    &:last-child {
+      @include breakpoint($lg) {
+        @include margin(null 0 null null);
+      }
+    }
+    
+    &:hover {
+      background-color: lighten($c-brand, 20%);
+    }
+    
+    &_accent {
+      background-color: white;
+      color: $c-brand;
+    }
+  }
+}

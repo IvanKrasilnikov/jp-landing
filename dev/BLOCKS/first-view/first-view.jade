@@ -1,0 +1,20 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.first-view
+  +e(style="background-image: url(img/first-view-bg.jpg);").bg
+  .wrapper
+    +e.HEADER.header
+      +e(href="http://jet-partners.ru/").logo
+        img(src="img/logo.png" alt="")
+      +e(data-activates="slide-out").menu.btn-floating.btn-large.waves-effect.waves-light
+        i.material-icons storage
+      +e.phone-wrapper
+        +e(href="tel:+74957956166").phone +7 495 795-61-66
+    +e.H1.title Позвольте Вашему бренду летать
+    +e.H3.text Реклама на самолёте – отличный повод поговорить о Вас и победить в конкурентной борьбе за внимание аудитории
+    +e.buttons
+      +e(href="#modal-offer").button.btn-large.modal-trigger.grey.lighten-5 Персональное предложение
+      +e(href="#").button.btn-large.grey.lighten-5 Скачать презентацию
+      +e(href="#modal-call").button_accent.waves-effect.waves-light.btn-large.modal-trigger Позвонить
+   +e.next.btn-floating.btn-large.waves-effect.transparent
+      i.material-icons expand_more

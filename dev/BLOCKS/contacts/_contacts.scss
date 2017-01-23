@@ -1,0 +1,107 @@
+.contacts {
+  @include padding(50px null);
+  
+  &__title {
+    @include text-shadow;
+    color: lighten($c-brand, 10%);
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__buttons {
+    @include padding(30px null);
+    text-align: center;
+  }
+  
+  &__button {
+    @include margin(null 30px null null);
+    background-color: lighten($c-brand, 10%);
+    color: white;
+    width: 320px;
+    @include breakpoint(0 $md) {
+      @include margin(null 0 null null);
+    }
+    @include breakpoint(0 $lg) {
+      @include margin(null null 10px null);
+      width: 380px;
+    }
+    @include breakpoint($md $lg) {
+      @include margin(null 80px);
+    }
+    
+    &:last-child {
+      @include breakpoint($lg) {
+        @include margin(null 0 null null);
+      }
+    }
+    
+    &:hover {
+      background-color: lighten($c-brand, 15%);
+    }
+  }
+  
+  
+  &__content {
+    @include container();
+    @include padding(20px null null);
+    @include breakpoint(0 $md) {
+      @include padding(0 null null);
+    }
+  }
+  
+  &__info {
+    @include span(6 of 12);
+    font-size: 1.333rem;
+    height: 500px;
+    justify-content: center;
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+      @include margin(null null 50px);
+      height: auto;
+      text-align: center;
+    }
+
+    .valign {
+      @include breakpoint(0 $md) {
+        width: 100%;
+      }
+    }
+  }
+  
+  &__name {
+    font-size: 1.999rem;
+    line-height: 50px;
+  }
+  
+  &__phone,
+  &__mail {
+    display: block;
+    font-size: 1.999rem;
+    font-weight: 300;
+    line-height: 110%;
+    
+    > a {
+      color: $c-brand;
+      display: inline-block;
+      transition: transform 0.2s;
+      
+      &:hover {
+        transform: translateX(10px);
+      }
+    }
+  }
+  
+  &__img {
+    @include span(6 of 12 last);
+    height: 500px;
+    text-align: center;
+    @include breakpoint(0 $md) {
+      @include span(12 of 12);
+    }
+    
+    > img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.episodes {
+  @include padding(50px null 80px);
+  
+  &__title {
+    @include text-shadow;
+    @include padding(null null 50px);
+    color: white;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__episode {
+    @include container();
+    @include padding(null null 30px);
+    @include breakpoint(0 $sm) {
+      &:nth-child(1),
+      &:nth-child(2) {
+        @include padding(null 20px);
+      }
+    }
+    
+    &:nth-child(n + 3) {
+      @include padding(null 20px);
+      background-color: #b2dfdb;
+    }
+    
+    &:nth-child(3) {//first child accent
+      @include padding(20px null null);
+      border-radius: 3px 3px 0 0;
+    }
+    
+    &:last-child {
+      @include padding(null null 20px);
+      border-radius: 0 0 3px 3px;
+      
+      .episodes__number-wrapper:before {
+        display: none;
+      }
+    }
+    
+    &_last {
+      .episodes__number-wrapper {
+        @include pre(5 of 12);
+        @include breakpoint(0 $sm) {
+          @include pre(0 of 12);
+        }
+      }
+      
+      .episodes__text {
+        @include last;
+        
+        &:before {
+          right: 0;
+          left: -70px;
+        }
+      }
+    }
+    
+    .valign {
+      @include padding(null 10px);
+      width: 100%;
+    }
+  }
+  
+  &__text {
+    @include span(5 of 12);
+    @include padding(10px null);
+    @include position(relative);
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    font-size: 1.414rem;
+    font-weight: 300;
+    min-height: 100px;
+    line-height: 110%;
+    
+    &:before {
+      @include position(absolute, 50% -70px null null);
+      background-color: white;
+      content: "";
+      display: block;
+      height: 2px;
+      width: 70px;
+      @include breakpoint(0 $sm) {
+        right: 0;
+        left: -70px;
+      }
+    }
+    
+    @include breakpoint(0 $sm) {
+      @include span(8 of 12 last);
+    }
+  }
+  
+  &__number-wrapper {
+    @include span(2 of 12);
+    @include position(relative);
+    text-align: center;
+    @include breakpoint(0 $sm) {
+      @include span(4 of 12);
+    }
+    
+    &:before {
+      @include position(absolute, null null -50% calc(50% - 1px));
+      background-color: white;
+      content: "";
+      display: block;
+      height: 50px;
+      width: 2px;
+    }
+  }
+  
+  &__number {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    cursor: default;
+    font-size: 2.827rem;
+    font-weight: 300;
+    height: 100px !important;
+    line-height: 100px !important;
+    width: 100px !important;
+  }
+  
+  &__buttons {
+    @include margin(50px null null);
+    text-align: center;
+  }
+  
+  &__button {
+    @include margin(null 30px null null);
+    @include breakpoint($xs $md) {
+      width: 380px;
+    }
+    @include breakpoint(0 $xs) {
+      font-size: 0.75rem;
+      width: 320px;
+    }
+    @include breakpoint(0 $md) {
+      @include margin(null 0 10px null);
+    }
+    
+    &:last-child {
+      @include margin(null 0 null null);
+    }
+  }
+}

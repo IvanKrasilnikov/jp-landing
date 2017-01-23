@@ -1,0 +1,75 @@
+.examples {
+  @include padding(50px null);
+  overflow: hidden;
+  
+  &__title {
+    @include text-shadow;
+    color: lighten($c-brand, 10%);
+    font-weight: 300;
+  }
+  
+  &__gallery {
+    @include container;
+  }
+  
+  &__card {
+    @include position(relative);
+    display: block;
+    transition: transform 1s ease-out;
+    @include breakpoint($md) {
+      @include span(6 of 12);
+
+      &:nth-child(2n) {
+        @include last;
+      }
+    }
+    @include breakpoint(0 $sm) {
+      @include span(12 of 12);
+    }
+    
+    &:before {
+      @include position(absolute, 0 null null 0);
+      background-image: url(../img/loupe.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+      display: block;
+      height: 100%;
+      opacity: 0.5;
+      transition: 0.2s opacity;
+      width: 100%;
+    }
+    
+    &:hover {
+      z-index: 2;
+      
+      &:before {
+        opacity: 0;
+      }
+    }
+    
+    &:nth-child(odd) {
+      transform: translateX(-1500px);
+    }
+    
+    &:nth-child(even) {
+      transform: translateX(1500px);
+    }
+    
+    &:nth-child(odd),
+    &:nth-child(even) {
+      @include breakpoint(0 $md) {
+        transform: none;
+      }
+    }
+    
+    &_view:nth-child(odd),
+    &_view:nth-child(even) {
+      transform: translateX(0);
+    }
+    
+    > img {
+      width: 100%;
+    }
+  }
+}

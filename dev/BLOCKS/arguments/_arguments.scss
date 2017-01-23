@@ -1,0 +1,73 @@
+.arguments {
+  @include padding(80px null 100px);
+  text-align: center;
+  overflow: hidden;
+  
+  &__title {
+    @include text-shadow;
+    color: lighten($c-brand, 10%);
+    font-weight: 300;
+  }
+  
+  &__content {
+    @include container();
+  }
+  
+  &__card {
+    transition: transform 1s ease-out;
+    @include breakpoint($sm) {
+      @include span(3 of 12);
+
+      &:last-child {
+        @include last;
+      }      
+    }
+    @include breakpoint(0 $sm) {
+      @include span(6 of 12);
+      
+      &:nth-child(2n) {
+        @include last;
+      }
+    }
+    
+    &:nth-child(1),
+    &:nth-child(2) {
+      transform: translateX(-1500px);
+    }
+    
+    &:nth-child(3),
+    &:nth-child(4) {
+      transform: translateX(1500px);
+    }
+    
+    &:nth-child(-n + 4) {
+      @include breakpoint(0 $sm) {
+        transform: none;
+      }
+    }
+    
+    &_view:nth-child(-n + 4) {
+      transform: translateX(0);
+    }
+  }
+  
+  &__img {
+    @include margin(50px null);
+    text-align: center;
+    
+    img {
+      width: 100%;
+    }
+  }
+  
+  &__text {
+    color: $c-brand;
+    font-size: 1.333rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    @include breakpoint(0 $sm) {
+      font-size: 1rem;
+    }
+  }
+}

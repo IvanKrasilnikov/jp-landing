@@ -1,0 +1,25 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $c-base-white;
+  color: $c-base-black;
+  font-family: $global-font-family;
+  font-weight: normal;
+  min-width: $window-min-width;
+}
+
+main {
+  display: block;//IE-fix
+}

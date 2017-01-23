@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=480">
+  <title>jp-landing</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300&amp;subset=latin,cyrillic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/vendors/materialize/materialize.css">
+  <link rel="stylesheet" href="css/vendors/viewbox.css">
+  <link rel="stylesheet" href="css/vendors/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/vendors/slick/slick.css">
+  <link rel="stylesheet" href="css/vendors/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="first-view">
+    <div style="background-image: url(img/first-view-bg.jpg);" class="first-view__bg"></div>
+    <div class="wrapper">
+      <header class="first-view__header">
+        <a href="http://jet-partners.ru/" class="first-view__logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div data-activates="slide-out" class="first-view__menu btn-floating btn-large waves-effect waves-light"><i class="material-icons">storage</i>
+        </div>
+        <div class="first-view__phone-wrapper"><a href="tel:+74957956166" class="first-view__phone">+7 495 795-61-66</a>
+        </div>
+      </header>
+      <h1 class="first-view__title">Позвольте Вашему бренду летать</h1>
+      <h3 class="first-view__text">Реклама на самолёте – отличный повод поговорить о Вас и победить в конкурентной борьбе за внимание аудитории</h3>
+      <div class="first-view__buttons"><a href="#modal-offer" class="first-view__button btn-large modal-trigger grey lighten-5">Персональное предложение</a><a href="#" class="first-view__button btn-large grey lighten-5">Скачать презентацию</a><a href="#modal-call" class="first-view__button first-view__button_accent waves-effect waves-light btn-large modal-trigger">Позвонить</a>
+      </div>
+    </div>
+    <div class="first-view__next btn-floating btn-large waves-effect transparent"><i class="material-icons">expand_more</i>
+    </div>
+  </div>
+  <div id="unprecedented" class="unprecedented reveal">
+    <div class="wrapper">
+      <h2 class="unprecedented__title">ЛЕТАЮЩИЙ БИЛБОРД объединяет все преимущества оффлайн и онлайн рекламы</h2>
+      <div class="unprecedented__content">
+        <div class="unprecedented__info valign-wrapper">
+          <div class="unprecedented__text valign">
+            <p>Уникальность рекламы на самолете – это возможность запустить вирусное продвижение и обеспечить дальнейшее обсуждение проекта во всех популярных социальных сетях, СМИ, блогосфере, форумах и других онлайн ресурсах.</p>
+            <p>Совмещая преимущества оффлайн и онлайн рекламы, летающий биллборд позволяет кратно увеличить охват аудитории.</p>
+            <p>Согласитесь, ни один рекламный щит на такое не способен!</p>
+          </div>
+        </div>
+        <div class="unprecedented__img">
+          <img src="img/unprecedented-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="see reveal">
+    <div class="wrapper">
+      <h2 class="see__title">Вашу рекламу увидят все</h2>
+      <div class="see__content">
+        <div class="see__card">
+          <div class="see__img">
+            <img src="img/see/see-1.png" alt="">
+          </div>
+          <div class="see__text">В аэропорту</div>
+        </div>
+        <div class="see__card">
+          <div class="see__img">
+            <img src="img/see/see-2.png" alt="">
+          </div>
+          <div class="see__text">Во время взлета</div>
+        </div>
+        <div class="see__card">
+          <div class="see__img">
+            <img src="img/see/see-3.png" alt="">
+          </div>
+          <div class="see__text">В полете</div>
+        </div>
+        <div class="see__card">
+          <div class="see__img">
+            <img src="img/see/see-4.png" alt="">
+          </div>
+          <div class="see__text">При посадке</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map reveal">
+    <div class="map__info">
+      <div class="wrapper">
+        <h2 class="map__title">Вашу рекламу увидят везде</h2>
+      </div>
+    </div>
+    <div class="map__map-container">
+      <div class="map__map">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+  <div id="work" class="work reveal">
+    <div class="wrapper">
+      <h2 class="work__title">Как это работает?</h2>
+      <div class="work__content">
+        <div class="work__card">
+          <div class="work__img">
+            <img src="img/work/work-1.png" alt="">
+          </div>
+          <div class="work__text">Запоминаемость бренда составляет 93% за счет длительного контакта с рекламным сообщением</div>
+        </div>
+        <div class="work__card">
+          <div class="work__img">
+            <img src="img/work/work-2.png" alt="">
+          </div>
+          <div class="work__text">Более 86% пассажиров вспоминают бренд с которым столкнулись во время перелёта</div>
+        </div>
+        <div class="work__card">
+          <div class="work__img">
+            <img src="img/work/work-3.png" alt="">
+          </div>
+          <div class="work__text">Рекламное сообщение во время путешествий побуждает 75% аудитории к покупке</div>
+        </div>
+        <div class="work__card">
+          <div class="work__img">
+            <img src="img/work/work-4.png" alt="">
+          </div>
+          <div class="work__text">86% пассажиров находятся в хорошем расположении духа и восприимчивы к рекламным сообщениям</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sensation reveal">
+    <div style="background-image: url(img/sensation-bg.jpg);" class="sensation__img-container"></div>
+    <div class="wrapper">
+      <h2 class="sensation__title">Брендирование самолетов</h2>
+      <h3 class="sensation__text">Нанесение рекламного материала на фюзеляж самолёта — наиболее заметная и впечатляющая возможность, которую мы предлагаем</h3>
+      <div class="sensation__square-wrapper">
+        более<span class="sensation__square"></span>м<sup>2</sup>
+      </div>
+      <div class="sensation__small-text">рекламной площади для самых смелых и креативных решений</div>
+      <div class="sensation__buttons"><a href="#modal-offer" class="sensation__button btn-large modal-trigger grey lighten-5">Персональное предложение</a><a href="#" class="sensation__button btn-large grey lighten-5">Скачать презентацию</a><a href="#modal-call" class="sensation__button sensation__button_accent waves-effect waves-light btn-large modal-trigger">Заказать звонок</a>
+      </div>
+    </div>
+  </div>
+  <div id="examples" class="examples reveal">
+    <div class="wrapper">
+      <h2 class="examples__title center-align">Фюзеляж самолета</h2>
+      <div class="examples__gallery">
+        <a href="img/examples/example-1.jpg" class="examples__card hoverable">
+          <img src="img/examples/example-1-small.jpg" alt="">
+        </a>
+        <a href="img/examples/example-2.jpg" class="examples__card hoverable">
+          <img src="img/examples/example-2-small.jpg" alt="">
+        </a>
+        <a href="img/examples/example-3.jpg" class="examples__card hoverable">
+          <img src="img/examples/example-3-small.jpg" alt="">
+        </a>
+        <a href="img/examples/example-4.jpg" class="examples__card hoverable">
+          <img src="img/examples/example-4-small.jpg" alt="">
+        </a>
+        <a href="img/examples/example-5.jpg" class="examples__card hoverable">
+          <img src="img/examples/example-5-small.jpg" alt="">
+        </a>
+        <a href="img/examples/example-6.jpg" class="examples__card hoverable">
+          <img src="img/examples/example-6-small.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="price" class="price reveal">
+    <div class="wrapper">
+      <h2 class="price__title">Дополнительные возможности</h2>
+      <div class="carousel">
+        <div class="price__card card carousel-item">
+          <div class="card-image">
+            <img src="img/price/1.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <h4 class="price__card-title">Обеденный столик</h4>
+            <div class="price__text">Пассажир будет видеть рекламу на протяжении всего полёта. Это идеальный способ передать даже самое подробное сообщение. Разместите максимум информации о продукте на вкладыше, который клиент обнаружит в спинке кресла. Отлично подойдет для специальных
+              предложений и купонов на скидку.
+            </div>
+          </div>
+          <div class="center-align"><a href="#modal-price" class="price__sale-button waves-effect waves-light btn modal-trigger">узнать стоимость</a>
+          </div>
+        </div>
+        <div class="price__card card carousel-item">
+          <div class="card-image">
+            <img src="img/price/2.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <h4 class="price__card-title">Багажная полка</h4>
+            <div class="price__text">То, что первым делом видит пассажир, поднявшись на борт. Самое большое рекламное пространство на борту. Пассажиры будут видеть ваше объявление на протяжении всего полёта. Запоминаемость подобного сообщения не сравнится ни с одним рекламным
+              щитом.</div>
+          </div>
+          <div class="center-align"><a href="#modal-price" class="price__sale-button waves-effect waves-light btn modal-trigger">узнать стоимость</a>
+          </div>
+        </div>
+        <div class="price__card card carousel-item">
+          <div class="card-image">
+            <img src="img/price/3.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <h4 class="price__card-title">Стаканчик</h4>
+            <div class="price__text">Разместите сообщение на стаканчиках и клиент будет видеть его каждый раз, когда захочет утолить жажду.</div>
+          </div>
+          <div class="center-align"><a href="#modal-price" class="price__sale-button waves-effect waves-light btn modal-trigger">узнать стоимость</a>
+          </div>
+        </div>
+        <div class="price__card card carousel-item">
+          <div class="card-image">
+            <img src="img/price/4.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <h4 class="price__card-title">Обеденный столик</h4>
+            <div class="price__text">Пассажир будет видеть рекламу на протяжении всего полёта. Это идеальный способ передать даже самое подробное сообщение. Разместите максимум информации о продукте на вкладыше, который клиент обнаружит в спинке кресла. Отлично подойдет для специальных
+              предложений и купонов на скидку.
+            </div>
+          </div>
+          <div class="center-align"><a href="#modal-price" class="price__sale-button waves-effect waves-light btn modal-trigger">узнать стоимость</a>
+          </div>
+        </div>
+        <div class="price__card card carousel-item">
+          <div class="card-image">
+            <img src="img/price/5.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <h4 class="price__card-title">Посадочный талон</h4>
+            <div class="price__text">Должно быть, самая важная часть любого полета, а, значит, и реклама на данном носителе не останется без внимания.</div>
+          </div>
+          <div class="center-align"><a href="#modal-price" class="price__sale-button waves-effect waves-light btn modal-trigger">узнать стоимость</a>
+          </div>
+        </div>
+      </div>
+      <div class="price__buttons"><a href="#modal-offer" class="price__button btn-large modal-trigger waves-effect waves-light">Персональное предложение</a><a href="#" class="price__button btn-large waves-effect waves-light">Скачать презентацию</a><a href="#modal-call" class="price__button price__button_accent btn-large modal-trigger grey lighten-5">Заказать звонок</a>
+      </div>
+    </div>
+  </div>
+  <div class="arguments reveal">
+    <div class="wrapper">
+      <h2 class="arguments__title">Реклама на самолете решает любую задачу</h2>
+      <div class="arguments__content">
+        <div class="arguments__card">
+          <div class="arguments__img">
+            <img src="img/arguments/arguments-1.png" alt="">
+          </div>
+          <div class="arguments__text">Вывести новый продукт на рынок</div>
+        </div>
+        <div class="arguments__card">
+          <div class="arguments__img">
+            <img src="img/arguments/arguments-2.png" alt="">
+          </div>
+          <div class="arguments__text">Победить в борьбе за внимание</div>
+        </div>
+        <div class="arguments__card">
+          <div class="arguments__img">
+            <img src="img/arguments/arguments-3.png" alt="">
+          </div>
+          <div class="arguments__text">Повысить имидж и узнаваемость компании</div>
+        </div>
+        <div class="arguments__card">
+          <div class="arguments__img">
+            <img src="img/arguments/arguments-4.png" alt="">
+          </div>
+          <div class="arguments__text">Дать новое дыхание забытому продукту</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--include ../BLOCKS/episodes/episodes-->
+  <!--include ../BLOCKS/about/about-->
+  <div class="to-action reveal">
+    <div class="wrapper">
+      <h2 class="to-action__title">РЕКЛАМА НА САМОЛЕТЕ – это реальная возможность стать №1</h2>
+      <div class="to-action__slider">
+        <a href="img/another/another-1.jpg" class="to-action__slider-item z-depth-1 hoverable">
+          <img src="img/another/another-1-small.jpg" alt="">
+        </a>
+        <a href="img/another/another-2.jpg" class="to-action__slider-item z-depth-1 hoverable">
+          <img src="img/another/another-2-small.jpg" alt="">
+        </a>
+        <a href="img/another/another-3.jpg" class="to-action__slider-item z-depth-1 hoverable">
+          <img src="img/another/another-3-small.jpg" alt="">
+        </a>
+        <a href="img/another/another-4.jpg" class="to-action__slider-item z-depth-1 hoverable">
+          <img src="img/another/another-4-small.jpg" alt="">
+        </a>
+        <a href="img/another/another-5.jpg" class="to-action__slider-item z-depth-1 hoverable">
+          <img src="img/another/another-5-small.jpg" alt="">
+        </a>
+        <a href="img/another/another-6.jpg" class="to-action__slider-item z-depth-1 hoverable">
+          <img src="img/another/another-6-small.jpg" alt="">
+        </a>
+        <a href="img/another/another-7.jpg" class="to-action__slider-item z-depth-1 hoverable">
+          <img src="img/another/another-7-small.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="contacts" class="contacts">
+    <div class="wrapper">
+      <h2 class="contacts__title">Готовы обсудить детали проекта?</h2>
+      <div class="contacts__buttons"><a href="#modal-offer" class="contacts__button btn-large modal-trigger waves-effect waves-light">Персональное предложение</a><a href="#" class="contacts__button btn-large waves-effect waves-light">Скачать презентацию</a><a href="#modal-call" class="contacts__button waves-effect waves-light btn-large modal-trigger">Заказать звонок</a>
+      </div>
+      <div class="contacts__content">
+        <div class="contacts__info valign-wrapper">
+          <div class="valign">
+            <div class="contacts__name">Андрейченко Юлия</div>
+            <div class="contacts__phone"><a href="tel:+74957956166">+7 495 795-61-66</a>
+            </div>
+            <div class="contacts__phone"><a href="tel:+79031098914">+7 903 109-89-14</a>
+            </div>
+            <div class="contacts__mail"><a href="mailto:julia@jet-partners.ru">julia@jet-partners.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__img">
+          <img src="img/contacts.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__copyright">&copy; 2016 Все права защищены</div>
+  </div>
+  <div id="toHome" class="to-home"><i class="material-icons">vertical_align_top</i>
+  </div>
+  <ul id="slide-out" class="side-nav">
+    <li class="side-nav__item">
+      <div class="userView">
+        <img src="img/side-nav-bg.jpg" alt="" class="background">
+        <a href="http://jet-partners.ru/" class="center-align">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+    </li>
+    <li class="side-nav__item"><a href="#unprecedented" class="waves-effect waves-light">Это беспрецедентно!</a>
+    </li>
+    <li class="side-nav__item"><a href="#work" class="waves-effect waves-light">Как это работает?</a>
+    </li>
+    <li class="side-nav__item"><a href="#examples" class="waves-effect waves-light">Как это выглядит?</a>
+    </li>
+    <li class="side-nav__item"><a href="#price" class="waves-effect waves-light">Стоимость услуг</a>
+    </li>
+    <li class="side-nav__item"><a href="#contacts" class="waves-effect waves-light">Наши контакты</a>
+    </li>
+  </ul>
+  <div id="modal-offer" class="modal-offer modal">
+    <h4 class="modal-offer__title center-align">Для получения персонального предложения заполните поля:</h4>
+    <div class="input-field">
+      <input type="text" id="modal-offer-name">
+      <label for="modal-offer-name">Ваше имя</label>
+    </div>
+    <div class="input-field">
+      <input type="email" id="modal-offer-email">
+      <label for="modal-offer-email">Ваш адрес электронной почты</label>
+    </div>
+    <div class="modal-offer__submit-wrapper">
+      <button type="submit" class="btn waves-effect waves-light">Отправить</button>
+    </div>
+  </div>
+  <div id="modal-call" class="modal-call modal">
+    <h4 class="modal-call__title center-align">Заполните поля ниже и наш специалист позвонит Вам:</h4>
+    <div class="input-field">
+      <input type="text" id="modal-call-name">
+      <label for="modal-call-name">Ваше имя</label>
+    </div>
+    <div class="input-field">
+      <input type="text" id="modal-call-phone">
+      <label for="modal-call-phone">Ваш телефон</label>
+    </div>
+    <div class="modal-call__submit-wrapper">
+      <button type="submit" class="btn waves-effect waves-light">Отправить</button>
+    </div>
+  </div>
+  <div id="modal-price" class="modal-price modal">
+    <div class="modal-price__name"></div>
+    <h4 class="modal-price__title center-align">Чтобы узнать стоимость размещения рекламы на этом элементе, заполните поля:</h4>
+    <div class="input-field">
+      <input type="text" id="modal-price-name">
+      <label for="modal-price-name">Ваше имя</label>
+    </div>
+    <div class="input-field">
+      <input type="email" id="modal-price-email">
+      <label for="modal-price-email">Ваш адрес электронной почты</label>
+    </div>
+    <div class="modal-price__submit-wrapper">
+      <button type="submit" class="btn waves-effect waves-light">Узнать</button>
+    </div>
+    <input type="hidden" value="">
+  </div>
+  <script src="js/vendors/jquery-2.1.1.min.js"></script>
+  <script src="js/vendors/materialize.min.js"></script>
+  <script src="js/vendors/jquery.viewbox.min.js"></script>
+  <script src="js/vendors/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/vendors/scrollreveal.min.js"></script>
+  <script src="js/vendors/slick.min.js"></script>
+  <script src="js/vendors/jquery.maskedinput.min.js"></script>
+  <script src="js/vendors/countUp.min.js"></script>
+  <script>
+    var breakpointNoneHor = 767, breakpointShowVert = 100;
+    $(document).scroll(function() {
+      if (document.documentElement.clientWidth > breakpointNoneHor &&
+         window.pageYOffset > breakpointShowVert) {
+         $("#toHome").show(200);
+      } else {
+        $("#toHome").hide(200);
+      }
+    });
+    $(window).resize(function() {
+      if (document.documentElement.clientWidth < breakpointNoneHor) {
+        $("#toHome").hide(200);
+      } else {
+        if (window.pageYOffset > breakpointShowVert) {
+          $("#toHome").show(200);
+        } else {
+          $("#toHome").hide(200);
+        }
+      }
+    });
+    $("#toHome").click(function() {
+      $("html, body").animate({scrollTop: 0}, 1000);
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.modal-trigger').leanModal();
+      window.sr = ScrollReveal().reveal('.reveal', {
+        duration: 700,
+        easing: 'ease-out',
+        beforeReveal: function (domEl) {
+          if ($(domEl).hasClass('sensation')) {
+            var sensation = new countUp($('.sensation__square')[0], 0, 800, 0, 5, {
+              useEasing: true
+            });
+            sensation.start();
+            $('.sensation__square').addClass('sensation__square_color');
+          } else if ($(domEl).hasClass('unprecedented')) {
+            $('.unprecedented__text').addClass('unprecedented__text_view');
+            $('.unprecedented__img').addClass('unprecedented__img_view');
+          } else if ($(domEl).hasClass('see')) {
+            $('.see__card').addClass('see__card_view');
+          } else if ($(domEl).hasClass('examples')) {
+            $('.examples__card').addClass('examples__card_view');
+          } else if ($(domEl).hasClass('arguments')) {
+            $('.arguments__card').addClass('arguments__card_view');
+          } else if ($(domEl).hasClass('work')) {
+            $('.work__card').addClass('work__card_view');
+          }
+        }
+      });
+      $('#modal-call-phone').mask('+7(999) 999-99-99');
+      $('.first-view__menu').sideNav({
+        edge: 'right'
+      });
+      $('.first-view__next').click(function(e) {
+        scrollTo('.unprecedented');
+      });
+      $('.carousel').carousel({
+        dist: -50
+      });  
+      $('.price__text').mCustomScrollbar({
+        theme: 'dark'
+      });
+      $('.to-action__slider').slick({
+        slidesToShow: 3,
+        infinite: true,
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              autoplay: false
+            }
+          },
+          {
+            breakpoint: 479,
+            settings: {
+              slidesToShow: 1,
+              autoplay: false
+            }
+          }
+        ]
+      });
+      $('.to-action__slider-item').viewbox();
+      $('.examples__card').viewbox();
+    });
+    function scrollTo(elem) {
+      $('html, body').animate({scrollTop: $(elem).offset().top}, 1000);
+    }
+  </script>
+  <script>
+    $('.price__sale-button').click(function(e) {
+      var curElem = $(e.target).parents('.price__card').find('.price__card-title').text();
+      $('.modal-price__name').text(curElem);
+      $('.modal-price [type="hidden"]').val(curElem);
+    });
+  </script>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 49, lng: 0},
+        zoom: 3,
+        scrollwheel: false,
+        disableDefaultUI: true,
+        styles: [
+          {
+            "featureType": "administrative.country",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              { "color": "#ffffff" }
+            ]
+          },{
+            "featureType": "water",
+            "stylers": [
+              { "color": "#ffffff" }
+            ]
+          },{
+            "featureType": "water",
+            "elementType": "labels",
+            "stylers": [
+              { "visibility": "off" }
+            ]
+          },{
+            "featureType": "administrative.country",
+            "elementType": "labels",
+            "stylers": [
+              { "visibility": "off" }
+            ]
+          },{
+            "featureType": "landscape.natural",
+            "stylers": [
+              { "color": "#c1c1c1" }
+            ]
+          },{
+            "featureType": "administrative.locality",
+            "stylers": [
+              { "visibility": "off" }
+            ]
+          },
+          {
+            "featureType": "administrative.province",
+            "stylers": [
+              { "visibility": "off" }
+            ]
+          }
+        ]
+      });
+      
+      newMarker('hongkong', 'hongkongInfo', 'Гонконг', {lat: 22.359, lng: 113.86});
+      newMarker('sp', 'spInfo', 'Санкт-Петербург', {lat: 59.917, lng: 30.044});
+      newMarker('oslo', 'osloInfo', 'Осло', {lat: 59.893, lng: 10.645});
+      newMarker('moscow', 'moscowInfo', 'Москва', {lat: 55.749, lng: 37.072});
+      newMarker('london', 'londonInfo', 'Лондон', {lat: 51.528, lng: -0.24});
+      newMarker('rome', 'romeInfo', 'Рим', {lat: 41.91, lng: 12.395});
+      newMarker('paris', 'parisInfo', 'Париж', {lat: 48.858, lng: 2.277});
+      newMarker('madrid', 'madridInfo', 'Мадрид', {lat: 40.438, lng: -3.819});
+      newMarker('prague', 'pragueInfo', 'Прага', {lat: 50.059, lng: 14.325});
+      newMarker('berlin', 'berlinInfo', 'Берлин', {lat: 52.507, lng: 12.145});
+      newMarker('stambul', 'stambulInfo', 'Стамбул', {lat: 41.005, lng: 28.731});
+      newMarker('astana', 'astanaInfo', 'Астана', {lat: 51.148, lng: 71.05});
+      newMarker('pekin', 'pekinInfo', 'Пекин', {lat: 39.939, lng: 116.117});
+      newMarker('barselona', 'barselonaInfo', 'Барселона', {lat: 41.394, lng: 2.078});
+      newMarker('kair', 'kairInfo', 'Каир', {lat: 30.123, lng: 31.302});
+      newMarker('ottawa', 'ottawaInfo', 'Оттава', {lat: 45.25, lng: -76.08});
+      newMarker('la', 'laInfo', 'Лос-Анджелес', {lat: 34.02, lng: -118.69});
+      newMarker('ny', 'nyInfo', 'Нью-Йорк', {lat: 40.705, lng: -74.118});
+      newMarker('reik', 'reikInfo', 'Рейкьявик', {lat: 64.132, lng: -21.922});
+      newMarker('rio', 'rioInfo', 'Рио-де-Жанейро', {lat: -22.91, lng: -43.728});
+      newMarker('cape', 'capeInfo', 'Кейптаун', {lat: -33.913, lng: 18.375});
+      newMarker('deli', 'deliInfo', 'Нью-Дели', {lat: 28.692, lng: 76.951});
+      newMarker('sidney', 'sidneyInfo', 'Сидней', {lat: -33.847, lng: 150.651});
+      newMarker('tokio', 'tokioInfo', 'Токио', {lat: 35.673, lng: 139.57});
+      newMarker('milan', 'milanInfo', 'Милан', {lat: 45.462, lng: 9.107});
+      newMarker('amsterdam', 'amsterdamInfo', 'Амстердам', {lat: 52.374, lng: 4.758});
+      newMarker('buda', 'budaInfo', 'Будапешт', {lat: 47.481, lng: 18.99});
+      newMarker('stokholm', 'stokholmInfo', 'Стокгольм', {lat: 59.326, lng: 17.847});
+      newMarker('mexico', 'mexicoInfo', 'Мехико', {lat: 19.391, lng: -99.283});
+      newMarker('tunis', 'tunisInfo', 'Тунис', {lat: 36.794, lng: 10.073});
+      newMarker('tbilisi', 'tbilisiInfo', 'Тбилиси', {lat: 41.732, lng: 44.698});
+      newMarker('dubai', 'dubaiInfo', 'Дубай', {lat: 25.074, lng: 54.947});
+      newMarker('dakar', 'dakarInfo', 'Дакар', {lat: 14.732, lng: -17.458});
+      newMarker('novosib', 'novosibInfo', 'Новосибирск', {lat: 54.97, lng: 82.809});
+      newMarker('krasno', 'krasnoInfo', 'Красноярск', {lat: 56.026, lng: 92.725});
+      newMarker('marra', 'marraInfo', 'Марракеш', {lat: 31.634, lng: -8.077});
+      newMarker('liss', 'lissInfo', 'Лиссабон', {lat: 38.743, lng: -9.23});
+      newMarker('varsh', 'varshInfo', 'Варшава', {lat: 52.233, lng: 20.781});
+      newMarker('kopen', 'kopenInfo', 'Копенгаген', {lat: 55.671, lng: 12.49});
+      newMarker('riga', 'rigaInfo', 'Рига', {lat: 56.971, lng: 23.85});
+      newMarker('helsinki', 'helsinkiInfo', 'Хельсинки', {lat: 60.164, lng: 24.76});
+      newMarker('minsk', 'minskInfo', 'Минск', {lat: 53.884, lng: 27.454});
+      newMarker('kiev', 'kievInfo', 'Киев', {lat: 50.402, lng: 30.252});
+      newMarker('kish', 'kishInfo', 'Кишенёв', {lat: 47, lng: 28.718});
+      newMarker('afin', 'afinInfo', 'Афины', {lat: 37.99, lng: 23.668});
+      newMarker('skopie', 'skopieInfo', 'Скопье', {lat: 41.999, lng: 21.354});
+      newMarker('tripoli', 'tripoliInfo', 'Триполи', {lat: 32.883, lng: 13.153});
+      newMarker('akkra', 'akkraInfo', 'Аккра', {lat: 5.591, lng: -0.249});
+      newMarker('niamei', 'niameiInfo', 'Ниамей', {lat: 13.512, lng: 2.048});
+      newMarker('damask', 'damaskInfo', 'Дамаск', {lat: 33.512, lng: 36.193});
+      newMarker('asmara', 'asmaraInfo', 'Асмэра', {lat: 15.325, lng: 38.846});
+      newMarker('tashkent', 'tashkentInfo', 'Ташкент', {lat: 41.282, lng: 69.139});
+      newMarker('katmandu', 'katmanduInfo', 'Катманду', {lat: 27.709, lng: 85.291});
+      newMarker('bangkok', 'bangkokInfo', 'Бангкок', {lat: 13.725, lng: 100.352});
+      newMarker('havana', 'havanaInfo', 'Гавана', {lat: 23.05, lng: -82.472});
+      newMarker('santa', 'santaInfo', 'Санта-Доминго', {lat: 18.48, lng: -70.016});
+      newMarker('lasvegas', 'lasvegasInfo', 'Лас-Вегас', {lat: 36.147, lng: -115.455});
+      newMarker('denver', 'denverInfo', 'Денвер', {lat: 39.764, lng: -104.995});
+      newMarker('dallas', 'dallasInfo', 'Даллас', {lat: 32.82, lng: -97.011});
+      newMarker('littlerock', 'littlerockInfo', 'Литл-Рок', {lat: 34.724, lng: -92.478});
+      newMarker('chicago', 'chicagoInfo', 'Чикаго', {lat: 41.833, lng: -88.012});
+      newMarker('atlanta', 'atlantaInfo', 'Атланта', {lat: 33.767, lng: -84.56});
+      newMarker('miami', 'miamiInfo', 'Майами', {lat: 25.782, lng: -80.301});
+      newMarker('vankouver', 'vankouverInfo', 'Ванкувер', {lat: 49.256, lng: -123.193});
+      newMarker('edmonton', 'edmontonInfo', 'Эдмонтон', {lat: 53.555, lng: -113.774});
+      newMarker('nook', 'nookInfo', 'Нук', {lat: 64.178, lng: -51.776});
+      newMarker('ekat', 'ekatInfo', 'Екатеринбург', {lat: 56.814, lng: 60.514});
+      newMarker('nn', 'nnInfo', 'Нижний Новгород', {lat: 56.292, lng: 43.786});
+      newMarker('kazan', 'kazanInfo', 'Казань', {lat: 55.795, lng: 48.793});
+      newMarker('chel', 'chelInfo', 'Челябинск', {lat: 55.152, lng: 61.128});
+      newMarker('samara', 'samaraInfo', 'Самара', {lat: 53.26, lng: 49.917});
+      newMarker('omsk', 'omskInfo', 'Омск', {lat: 54.985, lng: 73.075});
+      newMarker('rostov', 'rostovInfo', 'Ростов-на-Дону', {lat: 47.22, lng: 39.69});
+      newMarker('ufa', 'ufaInfo', 'Уфа', {lat: 54.808, lng: 55.74});
+      newMarker('perm', 'permInfo', 'Пермь', {lat: 58.02, lng: 55.954});
+      newMarker('voronej', 'voronejInfo', 'Воронеж', {lat: 51.675, lng: 38.955});
+      newMarker('volgograd', 'volgogradInfo', 'Волгоград', {lat: 48.67, lng: 44.223});
+      
+      function newMarker(name, addName, rusName, posObj) {
+        var name = new google.maps.Marker({
+          position: posObj,
+          map: map,
+          icon: 'img/point.svg'
+        }),
+        addName = new google.maps.InfoWindow({
+          content: '<h6 class="map__point-text">' + rusName + '</h6>'
+        });
+        name.addListener('mouseover', function() {
+          addName.open(map, name);
+        });
+        name.addListener('mouseout', function() {
+          addName.close(map, name);
+        });
+      }
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj6CFFRwlhWsCgh4e9U0FtnOMWJXbyEHM&amp;callback=initMap"></script>
+</body>
+
+</html>

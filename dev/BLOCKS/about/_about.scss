@@ -1,0 +1,41 @@
+.about {
+  @include padding(80px null 100px);
+  @include position(relative);
+  
+  &__img-container {
+    @include position(absolute, 0 null null 0);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+    &:before {
+      @include position(absolute, 0 null null 0);
+      background-color: rgba(white, 0.7);
+      background-image: none;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  &__title {
+    @include padding(null null null 40px);
+    @include text-shadow;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__item {
+    @include padding(null null 20px 40px);
+    @include position(relative);
+    font-size: 1.333rem;
+    font-weight: 300;
+    line-height: 110%;
+    
+    .material-icons {
+      @include position(absolute, 0 null null 0);
+    }
+  }
+}

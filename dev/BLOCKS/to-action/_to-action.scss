@@ -1,0 +1,38 @@
+.to-action {
+  @include padding(50px null);
+  background-color: lighten($c-brand, 10%);
+  text-align: center;
+  
+  &__title {
+    @include text-shadow;
+    color: white;
+    font-weight: 300;
+  }
+  
+  &__slider {
+    @include margin(35px 30px null);
+    
+    .slick-list {
+      @include padding(15px null null);
+      height: 230px;
+    }
+  }
+  
+  &__slider-item {
+    @include margin(null 10px);
+    height: 200px;
+    overflow: hidden;
+    
+    img {
+      max-width: 100%;
+      @include breakpoint(0 $lg) {
+        max-height: 100%;
+        max-width: none;
+      }
+      @include breakpoint(430px $xs) {
+        max-height: none;
+        max-width: 100%;
+      }
+    }
+  }
+}

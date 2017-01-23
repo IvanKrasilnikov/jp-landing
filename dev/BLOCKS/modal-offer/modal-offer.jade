@@ -1,0 +1,13 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.modal-offer.modal#modal-offer
+  +e.H4.title.center-align Для получения персонального предложения заполните поля:
+  .input-field
+    input(type="text")#modal-offer-name
+    label(for="modal-offer-name") Ваше имя
+  .input-field
+    input(type="email")#modal-offer-email
+    label(for="modal-offer-email") Ваш адрес электронной почты
+  +e.submit-wrapper
+    button(type="submit").btn.waves-effect.waves-light
+      | Отправить

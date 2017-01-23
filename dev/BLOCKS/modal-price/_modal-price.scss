@@ -1,0 +1,37 @@
+.modal-price {
+  @include padding(30px);
+  width: 380px;
+  
+  &__name {
+    @include margin(null null 10px);
+    @include text-shadow;
+    color: $c-brand;
+    font-size: 1.999rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  &__title {
+    @include padding(null null 10px);
+    font-weight: 300;
+  }
+  
+  &__submit-wrapper {
+    @include margin(10px null null);
+    color: $c-base-black;
+    text-align: center;
+    
+    > button {
+      background-color: $c-brand;
+
+      &:hover {
+        background-color: lighten($c-brand, 10%);
+      }
+    }
+  }
+  
+  // materialize firefox bug
+  [for^="modal-price"] {
+    left: 0;
+  }
+}

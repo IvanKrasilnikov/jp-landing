@@ -1,0 +1,13 @@
+include ../../../node_modules/bemto.jade/bemto
+
++b.modal-call.modal#modal-call
+  +e.H4.title.center-align Заполните поля ниже и наш специалист позвонит Вам:
+  .input-field
+    input(type="text")#modal-call-name
+    label(for="modal-call-name") Ваше имя
+  .input-field
+    input(type="text")#modal-call-phone
+    label(for="modal-call-phone") Ваш телефон
+  +e.submit-wrapper
+    button(type="submit").btn.waves-effect.waves-light
+      | Отправить

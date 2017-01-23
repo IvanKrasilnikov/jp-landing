@@ -1,0 +1,113 @@
+.sensation {
+  @include padding(80px null 100px);
+  @include position(relative);
+  text-align: center;
+  
+  &__img-container {
+    @include position(absolute, 0 null null 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    
+    &:before {
+      @include position(absolute, 0 null null 0);
+      background-color: rgba(black, 0.6);
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  &__title {
+    @include padding(null null null 40px);
+    @include text-shadow;
+    color: white;
+    font-weight: 300;
+  }
+  
+  &__text {
+    color: white;
+    font-weight: 300;
+  }
+  
+  &__square-wrapper {
+    @include text-shadow;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 4.4rem;
+  }
+  
+  &__square-text {
+    color: white;
+  }
+  
+  &__square {
+    @keyframes pulse {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+      50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+    @include margin(null 10px null);
+    animation: pulse 1.5s infinite;
+    display: inline-block;
+    font-size: 4.4rem;
+    font-weight: normal;
+    transition: color 4s ease-out;
+    
+    &_color {
+      color: lighten($c-brand, 10%);
+    }
+  }
+  
+  &__small-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  &__buttons {
+    @include margin(50px null null);
+  }
+  
+  &__button {
+    @include margin(null 30px null null);
+    background-color: white;
+    color: $c-brand;
+    width: 320px;
+    @include breakpoint(0 $md) {
+      @include margin(null 0 null null);
+    }
+    @include breakpoint(0 $lg) {
+      @include margin(null null 10px null);
+      width: 380px;
+    }
+    @include breakpoint($md $lg) {
+      @include margin(null 80px);
+    }
+    
+    &:last-child {
+      @include breakpoint($lg) {
+        @include margin(null 0 null null);
+      }
+    }
+    
+    &_accent {
+      background-color: lighten($c-brand, 10%);
+      color: white;
+      
+      &:hover {
+        background-color: lighten($c-brand, 15%);
+      }
+    }
+  }
+}

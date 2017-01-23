@@ -1,0 +1,17 @@
+.wrapper {
+  @include margin(null auto);
+  @include position(relative);
+  width: $lg-container;
+  @include breakpoint(0 $md) {
+    @include padding(null 10px);
+  }
+  @include breakpoint($md $lg) {
+    width: $md-container;
+  }
+  @include breakpoint($sm $md) {
+    width: $sm-container;
+  }
+  @include breakpoint(0 $sm) {
+    width: 100%;
+  }
+}

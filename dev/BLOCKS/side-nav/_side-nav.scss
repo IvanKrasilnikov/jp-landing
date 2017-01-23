@@ -1,0 +1,9 @@
+.side-nav {
+  .userView {
+    @include padding(null null 10px);
+    background-color: rgba(black, 0.5);
+    @include breakpoint(0 $md) {
+      @include padding(null null 0);
+    }
+  }
+}

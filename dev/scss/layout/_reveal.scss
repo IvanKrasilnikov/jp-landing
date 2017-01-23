@@ -1,0 +1,6 @@
+.reveal {
+  @include breakpoint(0 $sm) {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
